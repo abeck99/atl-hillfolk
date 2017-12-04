@@ -1,5 +1,4 @@
 import React from 'react'
-import HeaderBackground from './img/header.jpg'
 import UserGraph from './UserGraph'
 import Timeline from './Timeline'
 
