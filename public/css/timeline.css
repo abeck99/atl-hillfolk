@@ -1,0 +1,204 @@
+/*===== Vertical Timeline =====*/
+#conference-timeline {
+  position: relative;
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px;
+}
+#conference-timeline .timeline-start,
+#conference-timeline .timeline-end {
+  display: table;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  text-transform: uppercase;
+  background: #567287;
+  padding: 15px 23px;
+  color: #fff;
+  max-width: 5%;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  z-index: 10;
+}
+#conference-timeline .conference-center-line {
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  margin-left: -2px;
+  background: #567287;
+  z-index: -1;
+}
+#conference-timeline .conference-timeline-content {
+  padding-top: 67px;
+  padding-bottom: 67px;
+}
+.timeline-article {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  margin: 20px 0 70px 0px;
+}
+.timeline-article .content-left-container,
+.timeline-article .content-right-container {
+  max-width: 40%;
+  width: 100%;
+}
+.timeline-article .timeline-author {
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #fcf8e3;
+  text-align: right;
+  margin-top: -10px;
+}
+.timeline-article .content-left {
+  position: relative;
+  width: auto;
+  padding: 27px 25px;
+  padding-bottom: 0px;
+}
+.timeline-article .content-right {
+  position: relative;
+  width: auto;
+  border: 1px solid #ddd;
+  background-color: #6b8a8e;
+  box-shadow: 0 1px 3px rgba(0,0,0,.03);
+  padding: 27px 25px;
+}
+.timeline-article .content-right p {
+  /*margin: 0 0 0 60px;*/
+  padding: 0;
+  /*font-weight: 400;*/
+  color: #242424;
+  font-size: 1.3em;
+  line-height: 1.45em;
+  position: relative;
+  font-family: Garamond;
+  text-align: justify;
+}
+.timeline-article .content-left p {
+  /*margin: 0 0 0 60px;*/
+  padding: 0;
+  font-weight: 400;
+  color: #B5AD89;
+  font-size: 1.3em;
+  line-height: 1.5em;
+  position: relative;
+  font-style: italic;
+  font-family: Garamond;
+}
+.timeline-article p span.article-number {
+  position: absolute;
+  font-weight: 300;
+  font-size: 44px;
+  top: 10px;
+  left: -60px;
+  color: #567287;
+}
+.timeline-article .content-left-container {
+  float: left;
+}
+.timeline-article .content-right-container {
+  float: right;
+}
+.timeline-article .content-left:before,
+.timeline-article .content-right:before{
+  position: absolute;
+  top: 20px;
+  font-size: 23px;
+  font-family: "FontAwesome";
+  color: #fff;
+}
+/*.timeline-article .content-left:before {
+  content: "\f0da";
+  right: -8px;
+}
+.timeline-article .content-right:before {
+  content: "\f0d9";
+  left: -8px;
+}
+*/
+.timeline-article .meta-date {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  width: 100px;
+  /*height: 62px;*/
+  margin-left: -50px;
+  color: #fff;
+  border-radius: 10px;
+  background: #567287;
+  overflow: visible;
+}
+.timeline-article .meta-date .date,
+.timeline-article .meta-date .month {
+  display: block;
+  text-align: center;
+  font-weight: 900;
+}
+.timeline-article .meta-date .date {
+  font-size: 14px;
+  /*line-height: 40px;*/
+  /*margin-top: 16px;*/
+  margin: 10px;
+}
+.timeline-article .meta-date .month {
+  font-size: 18px;
+  line-height: 10px;
+}
+/*===== // Vertical Timeline =====*/
+
+/*===== Resonsive Vertical Timeline =====*/
+@media only screen and (max-width: 830px) {
+  #conference-timeline .timeline-start,
+  #conference-timeline .timeline-end {
+    margin: 0;
+  }
+  #conference-timeline .conference-center-line {
+    margin-left: 0;
+    left: 90px;
+  }
+  .timeline-article .meta-date {
+    margin-left: 0;
+    left: 0px;
+  }
+  .timeline-article .content-left-container,
+  .timeline-article .content-right-container {
+    max-width: 100%;
+    width: auto;
+    float: none;
+    margin-left: 150px;
+    /*min-height: 53px;*/
+  }
+  .timeline-article .content-left-container {
+    margin-bottom: 20px;
+  }
+  .timeline-article .content-left,
+  .timeline-article .content-right {
+    padding: 10px 25px;
+    /*min-height: 65px;*/
+  }
+  .timeline-article .content-left:before {
+    /*content: "\f0d9";*/
+    right: auto;
+    left: -8px;
+  }
+  .timeline-article .content-right:before {
+    display: none;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .timeline-article p {
+    margin: 0;
+  }
+  .timeline-article p span.article-number {
+    display: none;
+  }
+  
+}
