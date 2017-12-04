@@ -41,7 +41,7 @@ const styles = {
   headerStyle: {
     width: "100%",
     height: "400px",
-    background: "url(/src/img/header.jpg) no-repeat center bottom",
+    background: "url(/img/header.jpg) no-repeat center bottom",
     backgroundSize: "cover",
   },
   bodyBackgroundStyle: {

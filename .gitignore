@@ -21,3 +21,5 @@ chrome-user-data
 .vscode
 *.swp
 *.swo
+public/script.js
+public/*.jpg

@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "Rubik One";
+  font-style: normal;
+  src: url("/fonts/RubikOne-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Arapey";
+  font-style: normal;
+  src: url("/fonts/Arapey-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Arapey";
+  font-style: italic;
+  src: url("/fonts/Arapey-Italic.ttf") format("truetype");
+}

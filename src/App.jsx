@@ -6,7 +6,7 @@ import WebFont from 'webfontloader';
 WebFont.load({
   custom: {
     families: ['Rubik One'],
-    urls: ['/src/fonts/fonts.css']
+    urls: ['/fonts/fonts.css']
   }
 });
 
