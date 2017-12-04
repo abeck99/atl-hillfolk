@@ -128,13 +128,14 @@
   position: absolute;
   top: 0px;
   left: 50%;
-  width: 100px;
+  width: 120px;
   /*height: 62px;*/
-  margin-left: -50px;
+  margin-left: -60px;
   color: #fff;
   border-radius: 10px;
   background: #567287;
   overflow: visible;
+  padding: '5px';
 }
 .timeline-article .meta-date .date,
 .timeline-article .meta-date .month {

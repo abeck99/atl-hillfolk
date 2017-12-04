@@ -56,8 +56,13 @@ const styles = {
   //  width: '10%',
   //  padding: '0px',
   },
+  headerMiddleColumn: {
+    width: '100%',
+    padding: '0px',
+    maxWidth: '30em',
+  },
   middleColumn: {
-    width: '90%',
+    width: '100%',
     padding: '0px',
   },
   headerText: {
@@ -258,7 +263,7 @@ export default class Root extends React.Component {
       <div style={styles.framingBackground}>
         <div className="container" style={styles.headerStyle}>
           <div className="row" style={styles.row}>
-            <div className="col align-self-center" style={styles.middleColumn}>
+            <div className="col center-block" style={styles.headerMiddleColumn}>
               <p className="text-center" style={styles.headerText}>Raiders of Cragmaw Peak</p>
             </div>
           </div>
