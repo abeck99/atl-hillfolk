@@ -24,10 +24,14 @@ var path = require('path');
           }
         },
         {
-          test: /\.(png|jpg)$/,
-          loader: 'url-loader?limit=25000'
+          test: /\.(jpe?g|png)$/i,
+          loader: 'responsive-loader',
+          options: {
+            // If you want to enable sharp support:
+            // adapter: require('responsive-loader/sharp')
+          }
         },
-        { test: /\.yaml/, loader: 'json-loader!yaml-loader' },
+	{ test: /\.yaml/, loader: 'json-loader!yaml-loader' }
       ]
     },
     resolve: {
